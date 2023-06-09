@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.PapildomasLangas">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Tabas 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="187.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@hearts.png" />
+                           </image>
+                        </ImageView>
+                         <Label fx:id="label1" blendMode="RED" layoutX="20" layoutY="20" />
+                        <Button id="button" fx:id="button" layoutX="40.0" layoutY="92.0" mnemonicParsing="false" onAction="#testFunk" text="Button" />
+                         <Button id="button1" fx:id="button1" layoutX="80.0" layoutY="184.0" mnemonicParsing="false" onAction="#chooseColour" text="Choose colour" />
+                        <Button layoutX="40.0" layoutY="310.0" mnemonicParsing="false" text="Go back" fx:id="buttonToMainMenu" onAction="#goBackToMainMenu"/>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Tabas 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

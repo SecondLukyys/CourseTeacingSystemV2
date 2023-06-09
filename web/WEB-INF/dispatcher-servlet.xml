@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <mvc:annotation-driven/>
+
+    <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="/kursas">kursas</prop>
+                <prop key="/vartotojas">vartotojas</prop>
+                <prop key="/failas">failas</prop>
+                <prop key="/katalogas">katalogas</prop>
+                <prop key="/fizinisAsmuo">fizinisAsmuo</prop>
+                <prop key="/juridinisAsmuo">juridinisAsmuo</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/jsp/"
+          p:suffix=".jsp"/>
+
+    <bean name="kursas"
+          class="webController.KursasWebController"
+    />
+    <bean name="vartotojas"
+          class="webController.VartotojasWebController"
+    />
+    <bean name="failas"
+          class="webController.FailasWebController"
+    />
+    <bean name="katalogas"
+          class="webController.KatalogasWebController"
+    />
+    <bean name="fizinisAsmuo"
+          class="webController.FizinisAsmuoWebController"
+    />
+    <bean name="juridinisAsmuo"
+          class="webController.JuridinisAsmuoWebController"
+    />
+
+</beans>

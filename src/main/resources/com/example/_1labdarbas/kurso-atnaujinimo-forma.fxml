@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.KursoAtnaujinimoForma">
+   <children>
+      <Button fx:id="doneButton" layoutX="211.0" layoutY="316.0" mnemonicParsing="false" text="Done" onAction="#backToMainMenu"/>
+      <TextField fx:id="nameF" layoutX="159.0" layoutY="69.0" promptText="Name" />
+      <TextField fx:id="descF" layoutX="159.0" layoutY="105.0" promptText="Description" />
+      <TextField fx:id="diffF" layoutX="159.0" layoutY="176.0" promptText="Difficulty" />
+      <DatePicker fx:id="dateF" layoutX="159.0" layoutY="140.0" promptText="Date created" />
+      <TextField fx:id="creatorF" layoutX="159.0" layoutY="212.0" promptText="Creators" />
+      <TextField fx:id="moderaF" layoutX="159.0" layoutY="247.0" promptText="Moderators" />
+      <Button layoutX="17.0" layoutY="69.0" mnemonicParsing="false" text="Update name" onAction="#updateName"/>
+      <Button layoutX="17.0" layoutY="105.0" mnemonicParsing="false" text="Update description" onAction="#updateDesc"/>
+      <Button layoutX="17.0" layoutY="140.0" mnemonicParsing="false" text="Update date created" onAction="#updateDateCreated"/>
+      <Button layoutX="17.0" layoutY="176.0" mnemonicParsing="false" text="Update difficulty" onAction="#updateDifficulty"/>
+      <Button layoutX="17.0" layoutY="212.0" mnemonicParsing="false" text="Update creators" onAction="#updateCreators"/>
+      <Button layoutX="17.0" layoutY="247.0" mnemonicParsing="false" text="Update moderators" onAction="#updateModerators"/>
+   </children>
+</AnchorPane>

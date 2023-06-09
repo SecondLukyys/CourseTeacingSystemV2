@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="308.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.KursoKataloguAtnaujinimoForma">
+   <children>
+      <Button fx:id="buttonBack" layoutX="463.0" layoutY="265.0" mnemonicParsing="false" onAction="#backToMainMenu" text="Back to main menu" />
+      <ListView fx:id="listView" layoutX="33.0" layoutY="79.0" prefHeight="154.0" prefWidth="548.0" />
+      <Button fx:id="addCatalogue" layoutX="33.0" layoutY="265.0" mnemonicParsing="false" onAction="#addCatalogue" text="Add catalogue" />
+      <Button fx:id="removeCatalogue" layoutX="154.0" layoutY="265.0" mnemonicParsing="false" onAction="#removeCatalogue" text="Remove catalogue" />
+      <Label layoutX="228.0" layoutY="35.0" prefHeight="27.0" prefWidth="159.0" text="Course Catalogues">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
